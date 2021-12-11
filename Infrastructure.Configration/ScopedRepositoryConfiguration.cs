@@ -13,7 +13,9 @@ namespace Presentation.Config.ConfigurationService
             //services.AddTransient(typeof(IUserRepository), typeof(UserRepository));
             //services.AddTransient(typeof(IRoleRepository), typeof(RoleRepository));
 
-            // let do smthing
+            // let do smthing 
+
+            // test
 
             return services;
         }
