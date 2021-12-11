@@ -1,9 +1,6 @@
 ﻿using Persistence.IRepository;
 using Persistence.IRepository.IEntityRepository;
-using Persistence.IRepository.IUserRepository;
 using Persistence.Repository;
-using Persistence.Repository.EntityRepository;
-using Persistence.Repository.UserRepository;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Presentation.Config.ConfigurationService
@@ -13,8 +10,8 @@ namespace Presentation.Config.ConfigurationService
         public static IServiceCollection AddScopedRepository(this IServiceCollection services)
         {
             services.AddTransient(typeof(IUnitOfWork<>), typeof(UnitOfWork<>));
-            services.AddTransient(typeof(IUserRepository), typeof(UserRepository));
-            services.AddTransient(typeof(IRoleRepository), typeof(RoleRepository));
+            //services.AddTransient(typeof(IUserRepository), typeof(UserRepository));
+            //services.AddTransient(typeof(IRoleRepository), typeof(RoleRepository));
 
             return services;
         }
