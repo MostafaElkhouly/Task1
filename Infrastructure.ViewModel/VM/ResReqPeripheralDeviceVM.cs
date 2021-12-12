@@ -8,9 +8,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Domain.Entities
+namespace Infrastructure.ViewModel.VM
 {
-    public class PeripheralDevice : EntityBase
+    public class ResReqPeripheralDeviceVM 
     {
         [Required]
         public int UID { set; get; }

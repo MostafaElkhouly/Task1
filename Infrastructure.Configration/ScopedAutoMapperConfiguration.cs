@@ -1,5 +1,6 @@
 ﻿
 using AutoMapper;
+using Infrastructure.ViewModel.Profiles;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Presentation.Configration.Configrations
@@ -11,7 +12,8 @@ namespace Presentation.Configration.Configrations
 
             var mappingConfig = new MapperConfiguration(mapper =>
             {
-                
+                mapper.AddProfile(new PeripheralDeviceProfile());
+                mapper.AddProfile(new GatewayProfile());
             });
 
             //mappingConfig.AssertConfigurationIsValid();
