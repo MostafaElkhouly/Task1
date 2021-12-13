@@ -38,6 +38,8 @@ namespace Service.Data
                 return e;
             }).ToList();
 
+            //asdasd
+
             
 
             var value = mapper.Map<Gateway>(req);
