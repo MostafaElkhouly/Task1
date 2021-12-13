@@ -22,11 +22,8 @@ namespace MusalaTest
         }
 
         [Fact]
-        
         public void TestAdd()
         {
-
-            
 
             var obj = new ResReqGatewayVM
             {
@@ -37,7 +34,7 @@ namespace MusalaTest
             };
 
             var mockGateway = new Mock<IGatewayService>();
-            mockGateway.Setup(p => p.Add(obj)).Returns(true);
+            mockGateway.Setup(p => p.Add(obj)).Returns(false);
 
             var controller = new GatewayController(mockGateway.Object);
 
