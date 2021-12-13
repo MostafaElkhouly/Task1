@@ -36,8 +36,6 @@ namespace MusalaTest
                 SerialNumber = "Test"
             };
 
-            TestsHelper.ValidateObject(obj);
-
 
 
             var mockGateway = new Mock<IGatewayService>();
