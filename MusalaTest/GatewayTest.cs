@@ -4,6 +4,7 @@ using MusalaTask.Controllers;
 using Service.Interface;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,16 +22,23 @@ namespace MusalaTest
         }
 
         [Fact]
+        
         public void TestAdd()
         {
+
+            
+
             var obj = new ResReqGatewayVM
             {
                 DateOfCreate = DateTime.Now,
                 IPv4 = "Test",
                 Name = "Test",
                 SerialNumber = "Test"
-
             };
+
+            TestsHelper.ValidateObject(obj);
+
+
 
             var mockGateway = new Mock<IGatewayService>();
             mockGateway.Setup(p => p.Add(obj)).Returns(true);
@@ -40,6 +48,22 @@ namespace MusalaTest
             var result = controller.Add(obj);
 
             Assert.True(result);
+        }
+
+        [Fact]
+        public void Exception()
+        {
+            var obj = new ResReqGatewayVM
+            {
+                DateOfCreate = DateTime.Now,
+                IPv4 = "Test",
+                Name = "Test",
+                SerialNumber = null
+            };
+
+
+
+            Assert.Throws<ValidationException>(() => TestsHelper.ValidateObject(obj));
         }
 
         [Fact]

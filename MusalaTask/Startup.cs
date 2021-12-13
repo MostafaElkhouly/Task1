@@ -5,6 +5,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Middleware;
 using Presentation.Config.ConfigurationService;
 using Presentation.Configration.Configrations;
 using System;
@@ -44,11 +45,14 @@ namespace MusalaTask
             {
                 app.UseDeveloperExceptionPage();
             }
+            app.UseErrorMiddleware();
 
             app.UseRouting();
             app.UseSwaggerDocumentation();
 
             app.UseAuthorization();
+
+            app.UseErrorMiddleware();
 
             app.UseEndpoints(endpoints =>
             {

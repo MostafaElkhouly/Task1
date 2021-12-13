@@ -15,6 +15,9 @@ namespace Service.Interface
         public List<ResReqGatewayVM> GetAll();
         public ResReqGatewayVM GetById(Guid Id);
         public bool Update(ResReqGatewayVM req, Guid Id);
+        public bool updateStatus(Guid Id);
+        public bool AddPeripheralDevice(ResReqPeripheralDeviceVM req);
+        public bool DeletePeripheralDeviceByUId(Guid Id);
 
     }
 }

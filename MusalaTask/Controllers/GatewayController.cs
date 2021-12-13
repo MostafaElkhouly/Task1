@@ -49,5 +49,23 @@ namespace MusalaTask.Controllers
         {
             return service.Update(req, Id);
         }
+
+        [HttpDelete("DeletePeripheralDeviceById/{Id}")]
+        public bool DeletePeripheralDeviceByUId([FromRoute]Guid Id)
+        {
+            return service.DeletePeripheralDeviceByUId(Id);
+        }
+
+        [HttpPost("AddPeripheralDevice")]
+        public bool AddPeripheralDevice([FromBody]ResReqPeripheralDeviceVM req)
+        {
+            return service.AddPeripheralDevice(req);
+        }
+
+        [HttpPut("UpdateStatus/{Id}")]
+        public bool UpdateStatus([FromRoute] Guid Id)
+        {
+            return service.updateStatus(Id);
+        }
     }
 }

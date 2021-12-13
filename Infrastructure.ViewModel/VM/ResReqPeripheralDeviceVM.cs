@@ -12,11 +12,13 @@ namespace Infrastructure.ViewModel.VM
 {
     public class ResReqPeripheralDeviceVM 
     {
+        public Guid Id { set; get; }
         [Required]
         public int UID { set; get; }
         [Required]
         public string Vendor { set; get; }
         public bool Status { set; get; }
+        [Required]
         public Guid GatewayId { set; get; }
     }
 }

@@ -12,6 +12,7 @@ namespace Domain.Entities
 {
     public class PeripheralDevice : EntityBase
     {
+        public Guid Id { set; get; }
         [Required]
         public int UID { set; get; }
         [Required]
