@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service.Interface", "Servic
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusalaTask", "MusalaTask\MusalaTask.csproj", "{6AECBCF9-23EF-4189-9494-8BCDCB26BC88}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusalaTest", "MusalaTest\MusalaTest.csproj", "{68D752B7-41F4-4389-A130-10CD3C10D5C2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -73,6 +75,10 @@ Global
 		{6AECBCF9-23EF-4189-9494-8BCDCB26BC88}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6AECBCF9-23EF-4189-9494-8BCDCB26BC88}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6AECBCF9-23EF-4189-9494-8BCDCB26BC88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68D752B7-41F4-4389-A130-10CD3C10D5C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68D752B7-41F4-4389-A130-10CD3C10D5C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68D752B7-41F4-4389-A130-10CD3C10D5C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68D752B7-41F4-4389-A130-10CD3C10D5C2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -87,6 +93,7 @@ Global
 		{265A14A8-3FAB-4562-83C6-E7BBA2AC4B5D} = {1B3F70E8-160B-46AA-8FE2-BF42A8028841}
 		{0FC4236F-F31B-40E9-B43B-A06B001182E0} = {1B3F70E8-160B-46AA-8FE2-BF42A8028841}
 		{6AECBCF9-23EF-4189-9494-8BCDCB26BC88} = {8D6CE9A6-1608-434B-8F3A-62AF500325A0}
+		{68D752B7-41F4-4389-A130-10CD3C10D5C2} = {8D6CE9A6-1608-434B-8F3A-62AF500325A0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CFF50B30-07C5-4DDD-9EA8-539BF0E0F5E7}
