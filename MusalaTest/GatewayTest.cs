@@ -27,7 +27,7 @@ namespace MusalaTest
             };
 
             var mockGateway = new Mock<IGatewayService>();
-            mockGateway.Setup(p => p.Add(obj)).Returns(true);
+            mockGateway.Setup(p => p.Add(obj)).Returns(false);
 
             var controller = new GatewayController(mockGateway.Object);
 
